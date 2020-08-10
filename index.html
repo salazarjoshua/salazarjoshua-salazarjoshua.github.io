@@ -8,77 +8,83 @@
     <link rel="shortcut icon" type="img/png" href="./assets/images/js-favicon.png">
     <link rel="stylesheet" href="./aos-master/dist/aos.css"/>
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/style.scss"> -->
+
 </head>
 <body>
     <nav class="navbar">
         <div class="logo" data-aos="fade-down" data-aos-delay="0">
-            <a href="#home"><span>js</span></a>
+            <a href="#home"><abbr>js</abbr></a>
         </div>
-        <ul id="nav-list">
-            <!-- <a href="#works" class="active"><li data-aos="fade-down" data-aos-delay="250">Works</li></a>
-            <a href="#about"><li data-aos="fade-down" data-aos-delay="400">About</li></a>
-            <a href="#contact"><li data-aos="fade-down" data-aos-delay="400">Contact</li></a> -->
+        <ul id="nav-list" aria-hidden="true">
             <li class="active" data-aos="fade-down" data-aos-delay="150"><a class="menu" href="#works">Works</a></li>
             <li data-aos="fade-down" data-aos-delay="300"><a class="menu" href="#about">About</a></li>
             <li data-aos="fade-down" data-aos-delay="450"><a class="menu" href="#contact">Contact</a></li>
 
             <div class="ul-links">
                 
-                <div class="left-links">
+                <div class="links-style">
                         
-                    <a target="_blank" href="https://github.com/salazarjoshua" class="fill">
+                    <a target="_blank" href="https://github.com/salazarjoshua" class="fill" aria-label="My Github Profile.">
                         <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M5.65 12.477a.5.5 0 10-.3-.954l.3.954zm-3.648-2.96l-.484-.128-.254.968.484.127.254-.968zM9 14.5v.5h1v-.5H9zm.063-4.813l-.054-.497a.5.5 0 00-.299.852l.352-.354zM12.5 5.913h.5V5.91l-.5.002zm-.833-2.007l-.466-.18a.5.5 0 00.112.533l.354-.353zm-.05-2.017l.456-.204a.5.5 0 00-.319-.276l-.137.48zm-2.173.792l-.126.484a.5.5 0 00.398-.064l-.272-.42zm-3.888 0l-.272.42a.5.5 0 00.398.064l-.126-.484zM3.383 1.89l-.137-.48a.5.5 0 00-.32.276l.457.204zm-.05 2.017l.354.353a.5.5 0 00.112-.534l-.466.181zM2.5 5.93H3v-.002l-.5.002zm3.438 3.758l.352.355a.5.5 0 00-.293-.851l-.06.496zM5.5 11H6l-.001-.037L5.5 11zM5 14.5v.5h1v-.5H5zm.35-2.977c-.603.19-.986.169-1.24.085-.251-.083-.444-.25-.629-.49a4.8 4.8 0 01-.27-.402c-.085-.139-.182-.302-.28-.447-.191-.281-.473-.633-.929-.753l-.254.968c.08.02.184.095.355.346.082.122.16.252.258.412.094.152.202.32.327.484.253.33.598.663 1.11.832.51.168 1.116.15 1.852-.081l-.3-.954zm4.65-.585c0-.318-.014-.608-.104-.878-.096-.288-.262-.51-.481-.727l-.705.71c.155.153.208.245.237.333.035.105.053.254.053.562h1zm-.884-.753c.903-.097 1.888-.325 2.647-.982.78-.675 1.237-1.729 1.237-3.29h-1c0 1.359-.39 2.1-.892 2.534-.524.454-1.258.653-2.099.743l.107.995zM13 5.91a3.354 3.354 0 00-.98-2.358l-.707.706c.438.44.685 1.034.687 1.655l1-.003zm-.867-1.824c.15-.384.22-.794.21-1.207l-1 .025a2.12 2.12 0 01-.142.82l.932.362zm.21-1.207a3.119 3.119 0 00-.27-1.195l-.913.408c.115.256.177.532.184.812l1-.025zm-.726-.99c.137-.481.137-.482.136-.482h-.003l-.004-.002a.462.462 0 00-.03-.007 1.261 1.261 0 00-.212-.024 2.172 2.172 0 00-.51.054c-.425.091-1.024.317-1.82.832l.542.84c.719-.464 1.206-.634 1.488-.694a1.2 1.2 0 01.306-.03l-.008-.001a.278.278 0 01-.01-.002l-.006-.002h-.003l-.002-.001c-.001 0-.002 0 .136-.482zm-2.047.307a8.209 8.209 0 00-4.14 0l.252.968a7.209 7.209 0 013.636 0l.252-.968zm-3.743.064c-.797-.514-1.397-.74-1.822-.83a2.17 2.17 0 00-.51-.053 1.259 1.259 0 00-.241.03l-.004.002h-.003l.136.481.137.481h-.001l-.002.001-.003.001a.327.327 0 01-.016.004l-.008.001h.008a1.19 1.19 0 01.298.03c.282.06.769.23 1.488.694l.543-.84zm-2.9-.576a3.12 3.12 0 00-.27 1.195l1 .025a2.09 2.09 0 01.183-.812l-.913-.408zm-.27 1.195c-.01.413.06.823.21 1.207l.932-.362a2.12 2.12 0 01-.143-.82l-1-.025zm.322.673a3.354 3.354 0 00-.726 1.091l.924.38c.118-.285.292-.545.51-.765l-.708-.706zm-.726 1.091A3.354 3.354 0 002 5.93l1-.003c0-.31.06-.616.177-.902l-.924-.38zM2 5.93c0 1.553.458 2.597 1.239 3.268.757.65 1.74.88 2.64.987l.118-.993C5.15 9.09 4.416 8.89 3.89 8.438 3.388 8.007 3 7.276 3 5.928H2zm3.585 3.404c-.5.498-.629 1.09-.584 1.704L6 10.963c-.03-.408.052-.683.291-.921l-.705-.709zM5 11v3.5h1V11H5zm5 3.5V13H9v1.5h1zm0-1.5v-2.063H9V13h1z" fill="#ACACAC"></path></svg>    
                     </a>
                     
-                    <a target="_blank" href="https://codepen.io/salazarjoshua" class="fill">
+                    <a target="_blank" href="https://codepen.io/salazarjoshua" class="fill" aria-label="My Codepen Profile.">
                         <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M7.5.5l.29-.407a.5.5 0 00-.58 0L7.5.5zm7 5h.5a.5.5 0 00-.21-.407l-.29.407zm0 4l.29.407A.5.5 0 0015 9.5h-.5zm-7 5l-.29.407a.5.5 0 00.58 0L7.5 14.5zm-7-5H0a.5.5 0 00.21.407L.5 9.5zm0-4l-.29-.407A.5.5 0 000 5.5h.5zM7.21.907l7 5 .58-.814-7-5-.58.814zM14 5.5v4h1v-4h-1zm.21 3.593l-7 5 .58.814 7-5-.58-.814zm-6.42 5l-7-5-.58.814 7 5 .58-.814zM1 9.5v-4H0v4h1zM.79 5.907l7-5-.58-.814-7 5 .58.814zm0 4l7-5-.58-.814-7 5 .58.814zm6.42-5l7 5 .58-.814-7-5-.58.814zm-7 1l7 5 .58-.814-7-5-.58.814zm7.58 5l7-5-.58-.814-7 5 .58.814zM7 .5v4h1v-4H7zm0 10v4h1v-4H7z" fill="#ACACAC"></path></svg>              
                     </a>
             
-                    <a target="_blank" href="https://www.instagram.com/ripjos_/" class="stroke">
+                    <a target="_blank" href="https://www.instagram.com/ripjos_/" class="stroke" aria-label="My Instagram Profile.">
                         <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M11 3.5h1M4.5.5h6a4 4 0 014 4v6a4 4 0 01-4 4h-6a4 4 0 01-4-4v-6a4 4 0 014-4zm3 10a3 3 0 110-6 3 3 0 010 6z" stroke="#ACACAC"></path></svg>
                     </a>
 
-                    <a href="mailto:contact.joshuasalazar@gmail.com">
+                    <a href="mailto:joshuasalazar.dev@gmail.com" aria-label="My Email.">
                         <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M.5 4.5l7 4 7-4m-13-3h12a1 1 0 011 1v10a1 1 0 01-1 1h-12a1 1 0 01-1-1v-10a1 1 0 011-1z" stroke="#ACACAC"></path></svg>
                     </a>
                 </div>
             </div>
         </ul>
 
-        <div id="burger" data-aos="fade-down" data-aos-delay="0">
+        <button id="burger" 
+        data-aos="fade-down" 
+        data-aos-delay="0"
+        aria-label="Toggle Menu."
+        aria-pressed="false"
+        aria-controls="nav-list"
+        aria-expanded="false"
+        >
+            
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </button>
     </nav>
 
 
-    <section class="wrapper" id="home">
-        <div class="home-content">
-            <h6 data-aos="fade-up" data-aos-delay="600">Hey there, I'm</h6>
-            <h1 data-aos="fade-up" data-aos-delay="750">Joshua Salazar.</h1>
-            <h1 data-aos="fade-up" data-aos-delay="900"><span>I design & develop websites.</span></h1>
-            <p data-aos="fade-up" data-aos-delay="1050">I'm a Computer Engineering and Front-End Developer based in Laguna, Philippines. I specialized in developing and designing websites.</p>
-            <a href="#works"><button class="view-btn" data-aos="fade-up" data-aos-delay="1200">View Portfolio</button></a>
-            
-        </div>
-    </section>
+    <header class="wrapper" id="home">
+            <h1 >
+                <span data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">Hey there, I'm</span>
+                <span data-aos="fade-up" data-aos-delay="750" data-aos-offset="0">Joshua Salazar.</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="900" data-aos-offset="0">I develop websites.</p>
+            <p data-aos="fade-up" data-aos-delay="1050" data-aos-offset="0">I'm a computer engineer and front-end developer based in Laguna, Philippines. I develop (and occasionally design) things for the web.</p>
+            <a href="#works"  class="view-btn" data-aos="fade-up" data-aos-delay="1200" data-aos-offset="0">View Portfolio</a>
+    </header>
 
-    <!-- START WORKS -->
-    <div class="wrapper" id="works">
-        <h1  data-aos="fade-up">Some Things I've Built</h1>
+
+    <section class="wrapper" id="works">
+        <h2 data-aos="fade-up">Featured Projects</h2>
 
         <div class="grid-content" data-aos="fade-right">
-            <a target="_blank" href="https://salazarjoshua.github.io/andrei/" class="project-1 right"></a>
+            <a target="_blank" href="https://salazarjoshua.github.io/andrei/" class="right projects">
+                <img src="./assets/images/andrei-portfolio-website.png" alt="">
+            </a>
             <div class="project-details right" data-aos="fade-right" data-aos-delay="200">
-                <h2><a target="_blank" href="https://salazarjoshua.github.io/andrei/">Andrei Portfolio Website</a></h2>
-                <h4>Designed and developed a portfolio landing page for photographer. Focused on using CSS grids and flexbox to have a responsive web design.</h4>
-                <div class="programming-languages right">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>
+                <a target="_blank" href="https://salazarjoshua.github.io/andrei/"><h3>Andrei Portfolio Website</h3></a>
+                <p>Designed and developed a portfolio landing page for photographer. Focused on using CSS grids and flexbox to have a responsive web design.</p>
+                <ul class="programming-languages right">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
                 <div class="links right">
                     <a target="_blank" href="https://github.com/salazarjoshua/andrei">
                             <svg class="github-svg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M5.65 12.477a.5.5 0 10-.3-.954l.3.954zm-3.648-2.96l-.484-.128-.254.968.484.127.254-.968zM9 14.5v.5h1v-.5H9zm.063-4.813l-.054-.497a.5.5 0 00-.299.852l.352-.354zM12.5 5.913h.5V5.91l-.5.002zm-.833-2.007l-.466-.18a.5.5 0 00.112.533l.354-.353zm-.05-2.017l.456-.204a.5.5 0 00-.319-.276l-.137.48zm-2.173.792l-.126.484a.5.5 0 00.398-.064l-.272-.42zm-3.888 0l-.272.42a.5.5 0 00.398.064l-.126-.484zM3.383 1.89l-.137-.48a.5.5 0 00-.32.276l.457.204zm-.05 2.017l.354.353a.5.5 0 00.112-.534l-.466.181zM2.5 5.93H3v-.002l-.5.002zm3.438 3.758l.352.355a.5.5 0 00-.293-.851l-.06.496zM5.5 11H6l-.001-.037L5.5 11zM5 14.5v.5h1v-.5H5zm.35-2.977c-.603.19-.986.169-1.24.085-.251-.083-.444-.25-.629-.49a4.8 4.8 0 01-.27-.402c-.085-.139-.182-.302-.28-.447-.191-.281-.473-.633-.929-.753l-.254.968c.08.02.184.095.355.346.082.122.16.252.258.412.094.152.202.32.327.484.253.33.598.663 1.11.832.51.168 1.116.15 1.852-.081l-.3-.954zm4.65-.585c0-.318-.014-.608-.104-.878-.096-.288-.262-.51-.481-.727l-.705.71c.155.153.208.245.237.333.035.105.053.254.053.562h1zm-.884-.753c.903-.097 1.888-.325 2.647-.982.78-.675 1.237-1.729 1.237-3.29h-1c0 1.359-.39 2.1-.892 2.534-.524.454-1.258.653-2.099.743l.107.995zM13 5.91a3.354 3.354 0 00-.98-2.358l-.707.706c.438.44.685 1.034.687 1.655l1-.003zm-.867-1.824c.15-.384.22-.794.21-1.207l-1 .025a2.12 2.12 0 01-.142.82l.932.362zm.21-1.207a3.119 3.119 0 00-.27-1.195l-.913.408c.115.256.177.532.184.812l1-.025zm-.726-.99c.137-.481.137-.482.136-.482h-.003l-.004-.002a.462.462 0 00-.03-.007 1.261 1.261 0 00-.212-.024 2.172 2.172 0 00-.51.054c-.425.091-1.024.317-1.82.832l.542.84c.719-.464 1.206-.634 1.488-.694a1.2 1.2 0 01.306-.03l-.008-.001a.278.278 0 01-.01-.002l-.006-.002h-.003l-.002-.001c-.001 0-.002 0 .136-.482zm-2.047.307a8.209 8.209 0 00-4.14 0l.252.968a7.209 7.209 0 013.636 0l.252-.968zm-3.743.064c-.797-.514-1.397-.74-1.822-.83a2.17 2.17 0 00-.51-.053 1.259 1.259 0 00-.241.03l-.004.002h-.003l.136.481.137.481h-.001l-.002.001-.003.001a.327.327 0 01-.016.004l-.008.001h.008a1.19 1.19 0 01.298.03c.282.06.769.23 1.488.694l.543-.84zm-2.9-.576a3.12 3.12 0 00-.27 1.195l1 .025a2.09 2.09 0 01.183-.812l-.913-.408zm-.27 1.195c-.01.413.06.823.21 1.207l.932-.362a2.12 2.12 0 01-.143-.82l-1-.025zm.322.673a3.354 3.354 0 00-.726 1.091l.924.38c.118-.285.292-.545.51-.765l-.708-.706zm-.726 1.091A3.354 3.354 0 002 5.93l1-.003c0-.31.06-.616.177-.902l-.924-.38zM2 5.93c0 1.553.458 2.597 1.239 3.268.757.65 1.74.88 2.64.987l.118-.993C5.15 9.09 4.416 8.89 3.89 8.438 3.388 8.007 3 7.276 3 5.928H2zm3.585 3.404c-.5.498-.629 1.09-.584 1.704L6 10.963c-.03-.408.052-.683.291-.921l-.705-.709zM5 11v3.5h1V11H5zm5 3.5V13H9v1.5h1zm0-1.5v-2.063H9V13h1z" fill="#F5F5F5"></path></svg>
@@ -91,21 +97,21 @@
             </div>
         </div>
 
-        
-    
         <div class="grid-content" data-aos="fade-right">
                     
-            <a target="_blank" href="https://salazarjoshua.github.io/utes" class="project-2 left"></a>
+            <a target="_blank" href="https://salazarjoshua.github.io/utes" class="left projects">
+                <img src="./assets/images/utes-portfolio-website.png" alt="">
+            </a>
             <div class="project-details left" data-aos="fade-right" data-aos-delay="200">
-                <h2><a target="_blank" href="https://salazarjoshua.github.io/utes">Utes Portfolio Website</a></h2>
-                <h4>Designed and developed a portfolio landing page for Utes to showcase his skills and artworks. Explored the abilities of Bootstrap to have a responsive web design.</h4>
-                <div class="programming-languages left">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>Bootstrap</p>
-                    <p>jQuery</p>
-                </div>
+                <a target="_blank" href="https://salazarjoshua.github.io/utes"><h3>Utes Portfolio Website</h3></a>
+                <p>Designed and developed a portfolio landing page for Utes to showcase his skills and artworks. Explored the abilities of Bootstrap to have a responsive web design.</p>
+                <ul class="programming-languages left">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>jQuery</li>
+                </ul>
                 <div class="links left">
                     <a target="_blank" href="https://github.com/salazarjoshua/utes">
                             <svg class="github-svg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M5.65 12.477a.5.5 0 10-.3-.954l.3.954zm-3.648-2.96l-.484-.128-.254.968.484.127.254-.968zM9 14.5v.5h1v-.5H9zm.063-4.813l-.054-.497a.5.5 0 00-.299.852l.352-.354zM12.5 5.913h.5V5.91l-.5.002zm-.833-2.007l-.466-.18a.5.5 0 00.112.533l.354-.353zm-.05-2.017l.456-.204a.5.5 0 00-.319-.276l-.137.48zm-2.173.792l-.126.484a.5.5 0 00.398-.064l-.272-.42zm-3.888 0l-.272.42a.5.5 0 00.398.064l-.126-.484zM3.383 1.89l-.137-.48a.5.5 0 00-.32.276l.457.204zm-.05 2.017l.354.353a.5.5 0 00.112-.534l-.466.181zM2.5 5.93H3v-.002l-.5.002zm3.438 3.758l.352.355a.5.5 0 00-.293-.851l-.06.496zM5.5 11H6l-.001-.037L5.5 11zM5 14.5v.5h1v-.5H5zm.35-2.977c-.603.19-.986.169-1.24.085-.251-.083-.444-.25-.629-.49a4.8 4.8 0 01-.27-.402c-.085-.139-.182-.302-.28-.447-.191-.281-.473-.633-.929-.753l-.254.968c.08.02.184.095.355.346.082.122.16.252.258.412.094.152.202.32.327.484.253.33.598.663 1.11.832.51.168 1.116.15 1.852-.081l-.3-.954zm4.65-.585c0-.318-.014-.608-.104-.878-.096-.288-.262-.51-.481-.727l-.705.71c.155.153.208.245.237.333.035.105.053.254.053.562h1zm-.884-.753c.903-.097 1.888-.325 2.647-.982.78-.675 1.237-1.729 1.237-3.29h-1c0 1.359-.39 2.1-.892 2.534-.524.454-1.258.653-2.099.743l.107.995zM13 5.91a3.354 3.354 0 00-.98-2.358l-.707.706c.438.44.685 1.034.687 1.655l1-.003zm-.867-1.824c.15-.384.22-.794.21-1.207l-1 .025a2.12 2.12 0 01-.142.82l.932.362zm.21-1.207a3.119 3.119 0 00-.27-1.195l-.913.408c.115.256.177.532.184.812l1-.025zm-.726-.99c.137-.481.137-.482.136-.482h-.003l-.004-.002a.462.462 0 00-.03-.007 1.261 1.261 0 00-.212-.024 2.172 2.172 0 00-.51.054c-.425.091-1.024.317-1.82.832l.542.84c.719-.464 1.206-.634 1.488-.694a1.2 1.2 0 01.306-.03l-.008-.001a.278.278 0 01-.01-.002l-.006-.002h-.003l-.002-.001c-.001 0-.002 0 .136-.482zm-2.047.307a8.209 8.209 0 00-4.14 0l.252.968a7.209 7.209 0 013.636 0l.252-.968zm-3.743.064c-.797-.514-1.397-.74-1.822-.83a2.17 2.17 0 00-.51-.053 1.259 1.259 0 00-.241.03l-.004.002h-.003l.136.481.137.481h-.001l-.002.001-.003.001a.327.327 0 01-.016.004l-.008.001h.008a1.19 1.19 0 01.298.03c.282.06.769.23 1.488.694l.543-.84zm-2.9-.576a3.12 3.12 0 00-.27 1.195l1 .025a2.09 2.09 0 01.183-.812l-.913-.408zm-.27 1.195c-.01.413.06.823.21 1.207l.932-.362a2.12 2.12 0 01-.143-.82l-1-.025zm.322.673a3.354 3.354 0 00-.726 1.091l.924.38c.118-.285.292-.545.51-.765l-.708-.706zm-.726 1.091A3.354 3.354 0 002 5.93l1-.003c0-.31.06-.616.177-.902l-.924-.38zM2 5.93c0 1.553.458 2.597 1.239 3.268.757.65 1.74.88 2.64.987l.118-.993C5.15 9.09 4.416 8.89 3.89 8.438 3.388 8.007 3 7.276 3 5.928H2zm3.585 3.404c-.5.498-.629 1.09-.584 1.704L6 10.963c-.03-.408.052-.683.291-.921l-.705-.709zM5 11v3.5h1V11H5zm5 3.5V13H9v1.5h1zm0-1.5v-2.063H9V13h1z" fill="#F5F5F5"></path></svg>
@@ -117,21 +123,19 @@
             </div>
         </div>
         
-    </div>
-    <!-- END WORKS -->
+    </section>
 
-    <!-- START ABOUT -->
     <section class="wrapper" id="about" data-aos="fade-in" data-aos-offset="300">
         <div class="about-content">
-            <h1>About me</h1>
-            <h4>I’m a front-end developer based in Laguna, Philippines. I got my Computer Enginering degree at Colegio de San Juan de Letran-Calamba.</h4>
+            <h2>About me</h2>
+            <p>I’m a front-end developer based in Laguna, Philippines. I received my Computer Enginering degree at Colegio de San Juan de Letran-Calamba.</p>
             <br>
-            <h4>I enjoy being the bridge between developing and design, and feel right at home as a front end developer. I have several experience in making websites.</h4>
+            <p>I enjoy being the bridge between developing and design, and feel right at home as a front end developer. I also have experience making several websites</p>
             <br>
-            <h4>When I'm not in front of a computer screen, I'm probably at a local art event or watching a movie.</h4>
+            <p>When I'm not in front of a computer screen, I'm probably at a local art event or watching a movie.</p>
             <br>
-            <h4>Here are the few technologies I've been working with recently:
-            </h4>
+            <p>Here are the few technologies I've been working with recently:
+            </p>
             <br>
             <ul>
                 <li>HTML</li>
@@ -140,7 +144,6 @@
                 <li>SASS/SCSS</li>
                 <li>jQuery</li>
                 <li>Bootstrap</li>
-                <li>Git</li>
                 <li>Figma</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe XD</li>
@@ -148,36 +151,29 @@
             
         </div>
     </section> 
-    <!-- END ABOUT -->
 
-    <!-- START CONTACT -->
-    <section class="wrapper" id="contact">
-        <div class="contact-content" data-aos="fade-in" data-aos-offset="300">
-            <h1>Let's stop being strangers!</h1>
-            <h4>Feel free to get in touch. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</h4>
-            <br>
-            <a href="mailto:contact.joshuasalazar@gmail.com"><button class="view-btn">Say Hello</button></a>
+    <section class="wrapper" id="contact" data-aos="fade-in" data-aos-offset="300">
+        <div class="contact-content">
+            <h2>Let's stop being strangers!</h2>
+            <p>Feel free to get in touch. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            <a href="mailto:joshuasalazar.dev@gmail.com">Say Hello</a>
         </div>
     </section>
-    <!-- END CONTACT -->
+
 
 
     <footer class="wrapper">
-
-
-        <!-- START SIDE LINKS -->
-
     <div class="left-links"  data-aos="fade-in" data-aos-delay="1600" data-aos-offset="-2000">
             
-        <a target="_blank" href="https://github.com/salazarjoshua" class="fill">
+        <a target="_blank" href="https://github.com/salazarjoshua" class="fill" aria-label="My Github Profile.">
             <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M5.65 12.477a.5.5 0 10-.3-.954l.3.954zm-3.648-2.96l-.484-.128-.254.968.484.127.254-.968zM9 14.5v.5h1v-.5H9zm.063-4.813l-.054-.497a.5.5 0 00-.299.852l.352-.354zM12.5 5.913h.5V5.91l-.5.002zm-.833-2.007l-.466-.18a.5.5 0 00.112.533l.354-.353zm-.05-2.017l.456-.204a.5.5 0 00-.319-.276l-.137.48zm-2.173.792l-.126.484a.5.5 0 00.398-.064l-.272-.42zm-3.888 0l-.272.42a.5.5 0 00.398.064l-.126-.484zM3.383 1.89l-.137-.48a.5.5 0 00-.32.276l.457.204zm-.05 2.017l.354.353a.5.5 0 00.112-.534l-.466.181zM2.5 5.93H3v-.002l-.5.002zm3.438 3.758l.352.355a.5.5 0 00-.293-.851l-.06.496zM5.5 11H6l-.001-.037L5.5 11zM5 14.5v.5h1v-.5H5zm.35-2.977c-.603.19-.986.169-1.24.085-.251-.083-.444-.25-.629-.49a4.8 4.8 0 01-.27-.402c-.085-.139-.182-.302-.28-.447-.191-.281-.473-.633-.929-.753l-.254.968c.08.02.184.095.355.346.082.122.16.252.258.412.094.152.202.32.327.484.253.33.598.663 1.11.832.51.168 1.116.15 1.852-.081l-.3-.954zm4.65-.585c0-.318-.014-.608-.104-.878-.096-.288-.262-.51-.481-.727l-.705.71c.155.153.208.245.237.333.035.105.053.254.053.562h1zm-.884-.753c.903-.097 1.888-.325 2.647-.982.78-.675 1.237-1.729 1.237-3.29h-1c0 1.359-.39 2.1-.892 2.534-.524.454-1.258.653-2.099.743l.107.995zM13 5.91a3.354 3.354 0 00-.98-2.358l-.707.706c.438.44.685 1.034.687 1.655l1-.003zm-.867-1.824c.15-.384.22-.794.21-1.207l-1 .025a2.12 2.12 0 01-.142.82l.932.362zm.21-1.207a3.119 3.119 0 00-.27-1.195l-.913.408c.115.256.177.532.184.812l1-.025zm-.726-.99c.137-.481.137-.482.136-.482h-.003l-.004-.002a.462.462 0 00-.03-.007 1.261 1.261 0 00-.212-.024 2.172 2.172 0 00-.51.054c-.425.091-1.024.317-1.82.832l.542.84c.719-.464 1.206-.634 1.488-.694a1.2 1.2 0 01.306-.03l-.008-.001a.278.278 0 01-.01-.002l-.006-.002h-.003l-.002-.001c-.001 0-.002 0 .136-.482zm-2.047.307a8.209 8.209 0 00-4.14 0l.252.968a7.209 7.209 0 013.636 0l.252-.968zm-3.743.064c-.797-.514-1.397-.74-1.822-.83a2.17 2.17 0 00-.51-.053 1.259 1.259 0 00-.241.03l-.004.002h-.003l.136.481.137.481h-.001l-.002.001-.003.001a.327.327 0 01-.016.004l-.008.001h.008a1.19 1.19 0 01.298.03c.282.06.769.23 1.488.694l.543-.84zm-2.9-.576a3.12 3.12 0 00-.27 1.195l1 .025a2.09 2.09 0 01.183-.812l-.913-.408zm-.27 1.195c-.01.413.06.823.21 1.207l.932-.362a2.12 2.12 0 01-.143-.82l-1-.025zm.322.673a3.354 3.354 0 00-.726 1.091l.924.38c.118-.285.292-.545.51-.765l-.708-.706zm-.726 1.091A3.354 3.354 0 002 5.93l1-.003c0-.31.06-.616.177-.902l-.924-.38zM2 5.93c0 1.553.458 2.597 1.239 3.268.757.65 1.74.88 2.64.987l.118-.993C5.15 9.09 4.416 8.89 3.89 8.438 3.388 8.007 3 7.276 3 5.928H2zm3.585 3.404c-.5.498-.629 1.09-.584 1.704L6 10.963c-.03-.408.052-.683.291-.921l-.705-.709zM5 11v3.5h1V11H5zm5 3.5V13H9v1.5h1zm0-1.5v-2.063H9V13h1z" fill="#ACACAC"></path></svg>    
         </a>
         
-        <a target="_blank" href="https://codepen.io/salazarjoshua" class="fill">
+        <a target="_blank" href="https://codepen.io/salazarjoshua" class="fill" aria-label="My Codepen Profile.">
             <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M7.5.5l.29-.407a.5.5 0 00-.58 0L7.5.5zm7 5h.5a.5.5 0 00-.21-.407l-.29.407zm0 4l.29.407A.5.5 0 0015 9.5h-.5zm-7 5l-.29.407a.5.5 0 00.58 0L7.5 14.5zm-7-5H0a.5.5 0 00.21.407L.5 9.5zm0-4l-.29-.407A.5.5 0 000 5.5h.5zM7.21.907l7 5 .58-.814-7-5-.58.814zM14 5.5v4h1v-4h-1zm.21 3.593l-7 5 .58.814 7-5-.58-.814zm-6.42 5l-7-5-.58.814 7 5 .58-.814zM1 9.5v-4H0v4h1zM.79 5.907l7-5-.58-.814-7 5 .58.814zm0 4l7-5-.58-.814-7 5 .58.814zm6.42-5l7 5 .58-.814-7-5-.58.814zm-7 1l7 5 .58-.814-7-5-.58.814zm7.58 5l7-5-.58-.814-7 5 .58.814zM7 .5v4h1v-4H7zm0 10v4h1v-4H7z" fill="#ACACAC"></path></svg>              
         </a>
 
-        <a target="_blank" href="https://www.instagram.com/ripjos_/" class="stroke">
+        <a target="_blank" href="https://www.instagram.com/ripjos_/" class="stroke" aria-label="My Instagram Profile.">
             <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><path d="M11 3.5h1M4.5.5h6a4 4 0 014 4v6a4 4 0 01-4 4h-6a4 4 0 01-4-4v-6a4 4 0 014-4zm3 10a3 3 0 110-6 3 3 0 010 6z" stroke="#ACACAC"></path></svg>
         </a>
 
@@ -185,17 +181,13 @@
 
     </div>
 
-    <div class="right-links" data-aos="fade-in" data-aos-delay="1600" data-aos-offset="-2200">
-        <a href="mailto:contact.joshuasalazar@gmail.com">contact.joshuasalazar@gmail.com</a>
+    <div class="right-links" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-2200" aria-label="My Email.">
+        <a href="mailto:joshuasalazar.dev@gmail.com">joshuasalazar.dev@gmail.com</a>
         <div class="vertical-line"></div>
     </div>
-
-<!-- END SIDE LINKS -->
-        <!-- <p>Designed and Developed by Joshua Salazar</p> -->
     </footer>
 <script src="./js/jquery.min.js"></script>
 <script src="./aos-master/dist/aos.js"></script>
-<script src="./js/nav.js"></script>
 <script src="./js/main.js"></script>
 
 
