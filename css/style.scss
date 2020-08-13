@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
     font-family: 'Nilad';
@@ -16,19 +13,6 @@ $background: #262629;
 $text: #F5F5F5;
 $background-1: #353538;
 $text-1: #ACACAC;
-
-// background
-// background-1 (kaunting linaw lang sa background)
-// text (for headings)
-// text-1 (for paragraphs)
-// accent (for hover effects)
-
-// $background: #F5F5F5;
-// $text: #262629;
-// $background-1: #f5f5f5c7;
-// $text-1: #636364;
-// $accent: #fff;
-
 
 
 html {
@@ -77,8 +61,7 @@ body {
 /* NAV START */
 .navbar {
     top: 0;
-    //background-color: rgba(38, 38, 41, 0.9);
-    background-color: $background;
+    background-color: rgba(38, 38, 41, 0.9);
     position: fixed;
     height: 10vh;
     width: 100%;
@@ -178,7 +161,8 @@ body {
     }
     .navbar {
         padding: 0 25px;
-
+        background-color: $background;
+        
         ul {
 
             &[aria-hidden="true"]{
@@ -261,7 +245,7 @@ header{
 
                 &:nth-child(2){
                     font-weight: 600;
-                    font-size: 72px;
+                    font-size: 90px;
                 }
             }
         }
@@ -270,7 +254,7 @@ header{
 
             &:nth-child(2){
                 font-weight: 600;
-                font-size: 72px;
+                font-size: 90px;
                 color:$text-1;
             }
 
@@ -285,17 +269,23 @@ header{
 
         a {
             color:$text;
-            font-family: 'Roboto Mono', monospace;
+            
             align-self: flex-start;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
-            margin-bottom: 50px;
             text-decoration: none;
-            transition: 0.5s ease;
+            background-color: transparent;
+            transition: background-color 0.5s ease;
+            font-family: 'Karla', sans-serif;
+            margin-bottom: 50px;
+            border: 1px solid $text;
+            padding: 20px 20px;
+            border-radius: 5px;
             &:hover {
-                color:$text-1;
-                transition: 0.5s ease;
+                color:$background;
+                background-color: rgba(245, 245, 245, 0.9);
                 cursor: pointer;
+                transition: background-color 0.5s ease;
                 }     
         } 
 
@@ -453,7 +443,7 @@ header {
                 display: inline-block;
                 margin: 0  0 0 15px;
                 font-weight: 300;
-                font-family: 'Roboto Mono', monospace;
+                font-family: 'Karla', sans-serif;
                 }
             
             &.left {
@@ -606,7 +596,7 @@ fill:$text-1;
             li{
                 font-weight: 300;
                 color:$text;
-                font-family: 'Roboto Mono', monospace;
+                font-family: 'Karla', sans-serif;
                 margin: 5px;
                 
                 &::before {
@@ -645,6 +635,10 @@ fill:$text-1;
 
         .about-content {
             padding-bottom: 5vh;
+
+            p {
+                font-size: 16px;
+            }
         }
 
     }
@@ -681,12 +675,13 @@ fill:$text-1;
             margin-top: 30px;
             color:$text;
             border: 1px solid $text;
-            background: transparent;
+            background-color: transparent;
+            transition:background-color 0.3s ease;
             font-size: 18px;
             font-weight: 500;
-            padding: 18px 18px;
+            padding: 20px 20px;
             border-radius: 5px;
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Karla', sans-serif;
             margin-bottom: 50px;
             
             &:hover {

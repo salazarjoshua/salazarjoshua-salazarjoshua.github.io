@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @font-face {
   font-family: 'Nilad';
   src: url(../assets/fonts/NiladRegular.ttf);
@@ -50,7 +50,7 @@ body {
 /* NAV START */
 .navbar {
   top: 0;
-  background-color: #262629;
+  background-color: rgba(38, 38, 41, 0.9);
   position: fixed;
   height: 10vh;
   width: 100%;
@@ -151,6 +151,7 @@ body {
   }
   .navbar {
     padding: 0 25px;
+    background-color: #262629;
   }
   .navbar ul[aria-hidden="true"] {
     width: 100%;
@@ -256,12 +257,12 @@ header h1 span:nth-child(1) {
 
 header h1 span:nth-child(2) {
   font-weight: 600;
-  font-size: 72px;
+  font-size: 90px;
 }
 
 header p:nth-child(2) {
   font-weight: 600;
-  font-size: 72px;
+  font-size: 90px;
   color: #ACACAC;
 }
 
@@ -275,22 +276,27 @@ header p:nth-child(3) {
 
 header a {
   color: #F5F5F5;
-  font-family: 'Roboto Mono', monospace;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 50px;
   text-decoration: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  background-color: transparent;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  font-family: 'Karla', sans-serif;
+  margin-bottom: 50px;
+  border: 1px solid #F5F5F5;
+  padding: 20px 20px;
+  border-radius: 5px;
 }
 
 header a:hover {
-  color: #ACACAC;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  color: #262629;
+  background-color: rgba(245, 245, 245, 0.9);
   cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 @media (max-width: 1080px) {
@@ -439,7 +445,7 @@ header a:hover {
   display: inline-block;
   margin: 0  0 0 15px;
   font-weight: 300;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Karla', sans-serif;
 }
 
 #works .programming-languages.left {
@@ -582,7 +588,7 @@ header a:hover {
 .about-content ul li {
   font-weight: 300;
   color: #F5F5F5;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Karla', sans-serif;
   margin: 5px;
 }
 
@@ -613,6 +619,9 @@ header a:hover {
   }
   .about-content {
     padding-bottom: 5vh;
+  }
+  .about-content p {
+    font-size: 16px;
   }
 }
 
@@ -649,12 +658,14 @@ header a:hover {
   margin-top: 30px;
   color: #F5F5F5;
   border: 1px solid #F5F5F5;
-  background: transparent;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   font-size: 18px;
   font-weight: 500;
-  padding: 18px 18px;
+  padding: 20px 20px;
   border-radius: 5px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Karla', sans-serif;
   margin-bottom: 50px;
 }
 
