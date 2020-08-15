@@ -734,9 +734,7 @@ fill:$text-1;
 
 footer{
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -746,7 +744,7 @@ footer{
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1350px) {
 
     .vertical-line {
         opacity: 0;
@@ -773,7 +771,7 @@ footer{
 
 }
 
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1350px) {
 
     .vertical-line {
         margin-top: 15px;
