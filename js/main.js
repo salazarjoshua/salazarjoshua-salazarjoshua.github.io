@@ -7,7 +7,7 @@ AOS.init({
 
 $(document).ready(function(){
 	//Scroll to Top every Refresh
-	// $(this).scrollTop(0);
+	$(this).scrollTop(0);
 
 	// Responsive Navbar
 	$('#burger').click(function(){
